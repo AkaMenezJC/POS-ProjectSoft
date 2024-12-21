@@ -3,7 +3,7 @@ import App.Function.FunctionAccesLogic as Logic
 
 
 
-class FunctionLogicMenu:
+class FunctionLogic(Logic.Principal_Menu):
         #self.Inventary =[Logic.Principal_Menu.InventaryMenu(self)["ID"],
                          #Logic.Principal_Menu.InventaryMenu(self)["Nombre"]]
 

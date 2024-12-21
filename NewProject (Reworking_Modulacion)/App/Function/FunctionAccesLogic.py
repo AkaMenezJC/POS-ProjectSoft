@@ -6,7 +6,7 @@ import customtkinter as Tk
 from tkinter.messagebox import *
 #from PIL import Image, ImageTk, ImageColor
 import App.DataBase.DataBaseConnect as sqlbd
-from App.Function.LogicFuntionsMenu import FunctionLogicMenu
+#
 
 Iconfolder = os.path.dirname ("D:/ProjectTiendaRopas/NewProject"
                               " (Reworking_Modulacion)/App/Texture/Icon/IconApp.ico")
@@ -144,7 +144,7 @@ class Principal_Menu:
         self.root.geometry("843x635")
         self.root.iconbitmap(os.path.join(Iconfolder, "IconApp.ico"))
         self.root.resizable(width=False, height=False)
-        Fun = FunctionLogicMenu
+        #Fun = FunctionLogicMenu
 
         #Llamando los frames (Frame1, Frame2)
         self.frame1= Tk.CTkFrame(self.root)
@@ -243,8 +243,8 @@ class Principal_Menu:
                                padx= 10, pady= 10)
 
         delproductbutton= Tk.CTkButton(self.frame1,
-                                       text="Eliminar producto\n(Full)",
-                                       command= Fun.DeleteItemInventary) #Button
+                                       text="Eliminar producto\n(Full)",)
+                                       #command= Fun) #Button
         delproductbutton.grid(row= 13, column= 0,      #Antes de actualizar la tabla en la BD
                               padx= 10, pady= 15)      #Realizar una verificacion de acceso.
 
